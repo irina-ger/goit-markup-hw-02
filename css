@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --accent-color: #007bff;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav ul li a.active {
+    font-weight: 700;
+}
+
+.contact a {
+    color: var(--primary-color);
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: var(--accent-color);
+}
+
+.portfolio-filter ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.portfolio-filter ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.portfolio-filter button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
+    background-color: var(--accent-color);
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
